@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+:root {
+  /* Color Variables */
+  --white: hsl(0, 100%, 100%);
+  --grey: hsl(0, 0%, 58%);
+  --red: hsl(4, 100%, 67%);
+  --blue-800: hsl(234, 29%, 20%);
+  --blue-700: hsl(235, 18%, 26%);
+  --gradient-4: linear-gradient(
+    to right,
+    hsl(15, 100%, 61%),
+    hsl(346, 100%, 66%)
+  );
+
+  /* Typography (All letter spacing 0px)*/
+  --txt-size-56px: 56px; /*Text Preset 1 - Roboto bold, 100% line-height*/
+  --txt-size-88px: 88px; /*Text Preset 1 Mobile - Roboto bold, 100% line-height*/
+  --txt-size-16px: 16px; /*Text Preset 2 - Roboto bold/regular, line-height 150%*/
+  --txt-size-12px: 12px; /*Text Preset 3 - Roboto bold, line-height 150%*/
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  font-family: "Outfit", serif;
+  background: var(--blue-700);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive  Media queries */
+/* Mobile size  390px - 600px*/
+@media only screen and (min-width: 390px) {
+}
+/* Tablet size 768px*/
+/* @media only screen and (min-width: 391px) and (max-width: 768px){
+} */
+
+/* Desktop size 992px, 1200px, 1440px*/
+/* @media only screen and (min-width: 769px) and /*(max-width: 1440px)*/ /*{
+} */

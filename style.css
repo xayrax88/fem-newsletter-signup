@@ -19,9 +19,10 @@
   --txt-size-16px: 16px; /*Text Preset 2 - Roboto bold/regular, line-height 150%*/
   --txt-size-12px: 12px; /*Text Preset 3 - Roboto bold, line-height 150%*/
 }
-/* * {
-     box-sizing: border-box; 
-} */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Outfit", serif;
   background: var(--white);
@@ -36,20 +37,32 @@ body {
 ul {
   padding: 0;
 }
-li {
+/* li {
   list-style: none;
-}
-label,
+} */
+/* label,
 input {
   display: block;
-}
+} */
 input {
+  display: block;
   font-size: var(--txt-size-16px);
-  width: 327px;
-  /* height: 56px; */
+  width: 100%;
   padding: 16px 24px;
+  margin-top: 5px;
   margin-bottom: 10px;
   border-radius: 0.5rem;
+}
+.email-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.error-msg {
+  position: absolute;
+  right: 0;
 }
 .attribution {
   font-size: 11px;
@@ -65,7 +78,10 @@ input {
 @media only screen and (max-width: 390px) {
   label {
     font-size: var(--txt-size-12px);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  input {
+    width: 100%;
   }
   .signup-container {
     display: flex;
@@ -76,11 +92,7 @@ input {
     margin: 0 auto;
     /* border: 1px solid black; */
   }
-  #signup-form {
-    /* width: 327px; */
-    height: 474px;
-    /* border: 1px solid red; */
-  }
+
   .mobile-svg {
     height: 284px;
     width: 375px;
@@ -97,7 +109,6 @@ input {
     font-weight: bold;
     color: var(--white);
     width: 100%;
-    /* height: 56px; */
     padding: 16px 24px;
     margin-bottom: 10px;
     border-radius: 0.5rem;
@@ -106,6 +117,11 @@ input {
   }
   .sub-btn:hover {
     color: white;
+  }
+
+  .success-msg {
+    height: 623px;
+    width: 327px;
   }
 }
 /* Tablet size 768px*/

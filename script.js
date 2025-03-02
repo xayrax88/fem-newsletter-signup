@@ -6,7 +6,7 @@ const successMsg = document.querySelector(".success-msg");
 successMsg.style.display = "none";
 
 function validateEmail(email) {
-    if (!email) return "email is required";
+    if (!email) return "Email is required";
 
     const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

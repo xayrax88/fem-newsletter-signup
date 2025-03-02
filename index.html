@@ -183,11 +183,13 @@
             </p>
           </li>
         </ul>
-
-        <label for="email">Email address</label>
+        <div class="email-container">
+          <label for="email">Email address</label>
+          <span class="error-msg"></span>
+        </div>
         <input class="email-input" type="text" name="email" id="email" placeholder="email@company.com">
         <!-- For JS functionality type="email" was changed to type="text" in the email input & required was removed -->
-        <div class="error-msg"></div>
+
         <button class="sub-btn" type="submit">Subscribe to monthly newsletter</button>
       </form>
 

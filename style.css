@@ -64,6 +64,57 @@ input {
   position: absolute;
   right: 0;
 }
+
+.success-msg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  /* min-height: 80vh; */
+  height: 842px;
+  width: 375px;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 10px;
+  visibility: hidden;
+  /* opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease; */
+}
+
+.success-icon {
+  height: 64px;
+  width: 64px;
+}
+.success-msg-container.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+}
+.inner-success-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 623px;
+  width: 327px;
+}
+.dismiss-btn {
+  margin-top: auto;
+  width: 100%;
+  padding: 15px;
+  background: hsl(234, 29%, 20%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dismiss-btn:hover {
+  background: hsl(234, 29%, 30%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -93,7 +144,7 @@ input {
     /* border: 1px solid black; */
   }
 
-  .mobile-svg {
+  .mobile-svg-img {
     height: 284px;
     width: 375px;
     margin-bottom: 40px;
@@ -103,30 +154,28 @@ input {
     font-size: var(--txt-size-40px);
     margin-bottom: 24px;
   }
-
+  .sub-btn {
+    margin-bottom: 10px;
+  }
+  .dismiss-btn,
   .sub-btn {
     font-size: var(--txt-size-16px);
     font-weight: bold;
     color: var(--white);
     width: 100%;
     padding: 16px 24px;
-    margin-bottom: 10px;
     border-radius: 0.5rem;
     background-color: var(--blue-800);
     border-style: none;
   }
-  .sub-btn:hover {
-    color: white;
-  }
 
-  .success-msg {
-    height: 623px;
-    width: 327px;
+  .dismiss-btn {
+    margin-top: auto;
   }
 }
 /* Tablet size 768px*/
-/* @media only screen and (min-width: 391px) and (max-width: 768px){
-} */
+@media only screen and (min-width: 391px) and (max-width: 768px) {
+}
 
 /* Desktop size 992px, 1200px, 1440px*/
 /* @media only screen and (min-width: 769px) and /*(max-width: 1440px)*/ /*{

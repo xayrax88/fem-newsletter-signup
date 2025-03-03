@@ -43,7 +43,11 @@ successMsg.querySelector(".dismiss-btn").addEventListener("click", () => {
     //successMsg.style.display = "none";
     successMsg.classList.remove("show");
 
-    document.querySelector(".signup-container").style.display = "block";
+    // document.querySelector(".signup-container").style.display = "block";
+    const signupContainer = document.querySelector(".signup-container");
+    signupContainer.style.visibility = "visible";
+    signupContainer.style.opacity = "1";
+    signupContainer.style.display = "flex";
 
     emailInput.value = "";
     emailInput.style.backgroundColor = "white";

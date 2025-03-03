@@ -16,41 +16,42 @@
 <body>
   <main>
     <section class="signup-container">
-      <img class="mobile-svg-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-      <img class="desktop-svg-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
-      <form id="signup-form">
-        <h1 class="signup-h1">Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>
-            <p>
-              <img src="assets/images/icon-list.svg" alt="checkmark">
-              Product discovery and building what matters
-            </p>
-          </li>
-          <li>
-            <p>
-              <img src="assets/images/icon-list.svg" alt="checkmark">
-              Measuring to ensure updates are a success
-            </p>
-          </li>
-          <li>
-            <p>
-              <img src="assets/images/icon-list.svg" alt="checkmark">
-              And much more!
-            </p>
-          </li>
-        </ul>
-        <div class="email-container">
-          <label for="email">Email address</label>
-          <span class="error-msg"></span>
-        </div>
-        <input class="email-input" type="text" name="email" id="email" placeholder="email@company.com">
-        <!-- For JS functionality type="email" was changed to type="text" in the email input & required was removed -->
+      <div class="inner-signup">
+        <img class="mobile-svg-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+        <img class="desktop-svg-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+        <form id="signup-form">
+          <h1 class="signup-h1">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <p>
+                <img src="assets/images/icon-list.svg" alt="checkmark">
+                Product discovery and building what matters
+              </p>
+            </li>
+            <li>
+              <p>
+                <img src="assets/images/icon-list.svg" alt="checkmark">
+                Measuring to ensure updates are a success
+              </p>
+            </li>
+            <li>
+              <p>
+                <img src="assets/images/icon-list.svg" alt="checkmark">
+                And much more!
+              </p>
+            </li>
+          </ul>
+          <div class="email-container">
+            <label for="email">Email address</label>
+            <span class="error-msg"></span>
+          </div>
+          <input class="email-input" type="text" name="email" id="email" placeholder="email@company.com">
+          <!-- For JS functionality type="email" was changed to type="text" in the email input & required was removed -->
 
-        <button class="sub-btn" type="submit">Subscribe to monthly newsletter</button>
-      </form>
-
+          <button class="sub-btn" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
     </section>
 
     <section class="success-msg-container">
